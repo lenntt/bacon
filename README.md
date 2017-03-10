@@ -44,7 +44,8 @@ If we would keep a reference to the element that represents the visualization in
 
 # 2. The Pattern
 
-We name everything that the user sees and can interact with, a `Fragment`.
+Our pattern is an extension to [Page Objects](https://martinfowler.com/bliki/PageObject.html).
+The principle is the same: we name everything that the user sees and can interact with, a `Fragment` (instead of a `PageObject`) <sub>(even though PageObject is probably a better name)</sub>.
 Examples are buttons, dialogs, visualizations, labels, form elements.
 
 Your Automation Library will mostly consist of `Fragments`, which together represent your application. Each `Fragment` has certain operations it can do, which can be an action, like clicking, but also be verification, like verifying its text.
