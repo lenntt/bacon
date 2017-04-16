@@ -22,7 +22,7 @@ Automating a web application user interface consists of three areas:
 * **Test Definitions** describe what scenario to execute and what to validate.
     * How you will define the tests will depend on the test framework you choose. BACON is not tied to a  specific framework, nor will it tell you how to test. Our team though, favors *Cucumber*.
 * Your own **Automation Library**. This is what this cookbook is all about, on how to organize your automation code.
-* **Browser** is the generic browser automation part, which is not specific to the application, the industry standard is to use *Selenium WebDriver*.
+* **Browser** (-driver) is the generic browser automation part, which is not specific to the application, the industry standard is to use *Selenium WebDriver*.
 
 BACON describes how you organize your automation code in a way it is maintainable, yet very flexible.
 It is born out of necessity for testing heavily dynamic web applications and has proven its value in both Java and JavaScript frameworks.
