@@ -48,6 +48,10 @@ Our pattern is an extension to [Page Objects](https://martinfowler.com/bliki/Pag
 The principle is the same: we name everything that the user sees and can interact with, a `Fragment` (instead of a `PageObject`) <sub>(even though PageObject is probably a better name)</sub>.
 Examples are buttons, dialogs, visualizations, labels, form elements.
 
+A `Fragment` has two responsibilities:
+* Contain a definition of how to find the element
+* Expose actions that are relevant
+
 Your Automation Library will mostly consist of `Fragments`, which together represent your application. Each `Fragment` has certain operations it can do, which can be an action, like clicking, but also be verification, like verifying its text.
 
 ## Defining Fragments
